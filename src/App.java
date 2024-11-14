@@ -16,7 +16,7 @@ public class App extends Application {
 
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
+            root = FXMLLoader.load(getClass().getResource("ManageUserAccounts.fxml"));
             Scene scene = new Scene(root, 300, 250);
 
             primaryStage.setTitle("Hello World!");
