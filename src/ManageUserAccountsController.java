@@ -2,6 +2,9 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.stage.Stage;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -26,6 +29,9 @@ public class ManageUserAccountsController {
     private TableColumn<UserAccount, String> sellerDateJoinedColumn;
     @FXML
     private TableColumn<UserAccount, String> sellerActionColumn;
+
+    @FXML
+    private Button logoutButton;
 
     private ObservableList<UserAccount> buyerData = FXCollections.observableArrayList();
     private ObservableList<UserAccount> sellerData = FXCollections.observableArrayList();
@@ -55,8 +61,8 @@ public class ManageUserAccountsController {
         String sql = "SELECT * FROM Users WHERE role = 'buyer'";
 
         try (Connection conn = DriverManager.getConnection(DB_URL);
-             PreparedStatement stmt = conn.prepareStatement(sql);
-             ResultSet rs = stmt.executeQuery()) {
+                PreparedStatement stmt = conn.prepareStatement(sql);
+                ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
                 String userId = rs.getString("asu_id");
@@ -76,8 +82,8 @@ public class ManageUserAccountsController {
         String sql = "SELECT * FROM Users WHERE role = 'seller'";
 
         try (Connection conn = DriverManager.getConnection(DB_URL);
-             PreparedStatement stmt = conn.prepareStatement(sql);
-             ResultSet rs = stmt.executeQuery()) {
+                PreparedStatement stmt = conn.prepareStatement(sql);
+                ResultSet rs = stmt.executeQuery()) {
 
             while (rs.next()) {
                 String userId = rs.getString("asu_id");
@@ -90,6 +96,20 @@ public class ManageUserAccountsController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void logoutButtonClick() {
+        // Close the current window (logging out the user)
+        Stage currentStage = (Stage) logoutButton.getScene().getWindow();
+        currentStage.close();
+
+        // navigate to the login screen (uncomment the lines below for login page)
+        // FXMLLoader loader = new FXMLLoader(getClass().getResource("Login.fxml"));
+        // Parent root = loader.load();
+        // Scene scene = new Scene(root);
+        // currentStage.setScene(scene);
+        // currentStage.show();
     }
 
     // Model class for UserAccount
