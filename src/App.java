@@ -16,10 +16,10 @@ public class App extends Application {
 
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getResource("MainScene.fxml"));
-            Scene scene = new Scene(root, 300, 250);
+            root = FXMLLoader.load(getClass().getResource("ManageUserAccounts.fxml"));
+            Scene scene = new Scene(root, 1200, 675);
 
-            primaryStage.setTitle("Hello World!");
+            primaryStage.setTitle("Manage User Accounts");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException e) {

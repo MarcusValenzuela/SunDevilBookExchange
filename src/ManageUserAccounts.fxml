@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="ManageUserAccountsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="759.0" prefWidth="1155.0"
+   xmlns="http://javafx.com/javafx/23.0.1"
+   xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="674.0" prefWidth="207.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="511.0" prefWidth="168.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="DASHBOARD">
+                     <VBox.margin>
+                        <Insets bottom="80.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label text="QUICK NAVIGATION" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink text="Monitor Transactions">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink text="Buying &amp; Sales Record">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink text="Manage User Accounts">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink text="System Configuration">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" style="-fx-background-color: gray; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-max-width: 200px;" text="Logout">
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="759.0" prefWidth="978.0" style="-fx-background-color: #f0f0f0;">
+         <children>
+            <HBox layoutX="-207.0" prefHeight="100.0" prefWidth="1177.0" style="-fx-background-color: #f0c845;" />
+            <HBox layoutX="14.0" layoutY="216.0" prefHeight="162.0" prefWidth="918.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="162.0" prefWidth="158.0" style="-fx-border-color: gray; -fx-background-color: white; -fx-border-radius: 4px;">
+                     <HBox.margin>
+                        <Insets left="20.0" right="50.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="Total Buyer Accounts">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalBuyerAccountsLabel" text="0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="162.0" prefWidth="178.0" style="-fx-border-color: grey; -fx-background-color: white; -fx-border-radius: 4px;">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="Total Seller Accounts">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalSellerAccountsLabel" text="0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="162.0" prefWidth="171.0" style="-fx-border-color: grey; -fx-background-color: white; -fx-border-radius: 4px;">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="New Buyer Accounts">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="newBuyerAccountsLabel" text="0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="162.0" prefWidth="170.0" style="-fx-border-color: grey; -fx-background-color: white; -fx-border-radius: 4px;">
+                     <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label text="New Seller Accounts" />
+                        <Label fx:id="newSellerAccountsLabel" text="0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="31.0" layoutY="457.0" prefHeight="150.0" prefWidth="891.0">
+               <children>
+                  <TableView fx:id="buyerTableView" layoutX="14.0" layoutY="457.0" prefHeight="150.0" prefWidth="400.0">
+                     <columns>
+                        <TableColumn fx:id="buyerUserIdColumn" text="USER ID" />
+                        <TableColumn fx:id="buyerDateJoinedColumn" text="DATE JOINED" />
+                        <TableColumn fx:id="buyerActionColumn" text="ACTION" />
+                     </columns>
+                     <HBox.margin>
+                        <Insets right="100.0" />
+                     </HBox.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+
+                  <!-- Table for Seller Accounts -->
+                  <TableView fx:id="sellerTableView" layoutX="434.0" layoutY="457.0" prefHeight="150.0" prefWidth="400.0">
+                     <columns>
+                        <TableColumn fx:id="sellerUserIdColumn" text="USER ID" />
+                        <TableColumn fx:id="sellerDateJoinedColumn" text="DATE JOINED" />
+                        <TableColumn fx:id="sellerActionColumn" text="ACTION" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </HBox>
+            <Label layoutX="48.0" layoutY="148.0" prefHeight="35.0" prefWidth="336.0" text="MANAGE USER ACCOUNTS" textFill="#6f2922">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="405.0" text="Buyer Accounts" textFill="#808080">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label layoutX="619.0" layoutY="405.0" text="Seller Accounts" textFill="GREY">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
