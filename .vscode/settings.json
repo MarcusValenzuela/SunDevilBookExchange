@@ -10,6 +10,9 @@
         "c:\\Program Files\\Java\\javafx-sdk-17.0.13\\lib\\javafx.media.jar",
         "c:\\Program Files\\Java\\javafx-sdk-17.0.13\\lib\\javafx.swing.jar",
         "c:\\Program Files\\Java\\javafx-sdk-17.0.13\\lib\\javafx.web.jar",
-        "c:\\Program Files\\Java\\javafx-sdk-17.0.13\\lib\\javafx-swt.jar"
+        "c:\\Program Files\\Java\\javafx-sdk-17.0.13\\lib\\javafx-swt.jar",
+        "c:\\Users\\marcu\\Downloads\\sqlite-jdbc-3.47.0.0.jar",
+        "c:\\Users\\marcu\\Downloads\\slf4j-api-1.7.9.jar",
+        "c:\\Users\\marcu\\Downloads\\slf4j-simple-1.7.9.jar"
     ]
 }
