@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import Necessary JavaFX Components -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<!-- Root AnchorPane -->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminTransactions" stylesheets="@application.css">
+   <children>
+      <!-- Top Yellow Bar -->
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2c94b" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1200.0" />
+
+      <!-- Left Yellow Bar -->
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0b326" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+
+      <!-- Title Label -->
+      <Label layoutX="240.0" layoutY="114.0" text="MONITOR TRANSACTIONS" textAlignment="CENTER" textFill="#84201e">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+
+      <!-- Navigation VBox -->
+      <VBox layoutY="60.0" prefHeight="400.0" prefWidth="200.0" spacing="15.0">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <!-- Dashboard Navigation Label -->
+            <Label fx:id="dashboardLabel" alignment="CENTER" prefHeight="17.0" prefWidth="202.0" text="DASHBOARD" onMouseClicked="#handleNavigation" styleClass="inactive-label">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+
+            <!-- Quick Navigation Header -->
+            <Label prefHeight="64.0" prefWidth="136.0" text="Quick Navigation" wrapText="true" styleClass="navigation-header">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+
+            <!-- Monitor Transactions Navigation Label -->
+            <Label fx:id="monitorTransactionsLabel" prefHeight="17.0" prefWidth="221.0" text="Monitor Transactions" onMouseClicked="#handleNavigation" styleClass="active-label">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+
+            <!-- Buying & Sales Record Navigation Label -->
+            <Label fx:id="buyingSalesRecordLabel" prefHeight="17.0" prefWidth="226.0" text="Buying &amp; Sales Record" onMouseClicked="#handleNavigation" styleClass="inactive-label">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+
+            <!-- Manage User Accounts Navigation Label -->
+            <Label fx:id="manageUserAccountsLabel" prefHeight="17.0" prefWidth="229.0" text="Manage User Accounts" onMouseClicked="#handleNavigation" styleClass="inactive-label">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+
+            <!-- System Configuration Navigation Label -->
+            <Label fx:id="systemConfigLabel" prefHeight="17.0" prefWidth="238.0" text="System Configuration" onMouseClicked="#handleNavigation" styleClass="inactive-label">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+
+      <!-- Logout Footer Bar -->
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cccccc" height="60.0" layoutY="615.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+
+      <!-- Logout Label -->
+      <Label layoutX="61.0" layoutY="630.0" text="LOGOUT" textFill="#656565">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+
+      <!-- Transaction Table -->
+      <TableView fx:id="transactionTable" layoutX="240.0" layoutY="188.0" prefHeight="346.0" prefWidth="912.0">
+        <columns>
+          <!-- Index Column -->
+          <TableColumn fx:id="indexColumn" text="#" prefWidth="30.0" />
+
+          <!-- Type Column -->
+          <TableColumn fx:id="typeColumn" text="TYPE" prefWidth="90.0" />
+
+          <!-- ID Column -->
+          <TableColumn fx:id="idColumn" text="ID" prefWidth="50.0" />
+
+          <!-- Date Column -->
+          <TableColumn fx:id="dateColumn" text="DATE" prefWidth="95.0" />
+
+          <!-- Title Column -->
+          <TableColumn fx:id="titleColumn" text="TITLE" prefWidth="204.0" />
+
+          <!-- Category Column -->
+          <TableColumn fx:id="categoryColumn" text="CATEGORY" prefWidth="122.0" />
+
+          <!-- Condition Column -->
+          <TableColumn fx:id="conditionColumn" text="CONDITION" prefWidth="120.0" />
+
+          <!-- Unit Price Column -->
+          <TableColumn fx:id="unitPriceColumn" text="UNIT PRICE" prefWidth="95.0" />
+
+          <!-- User Column -->
+          <TableColumn fx:id="userColumn" text="USER" prefWidth="85.0" />
+        </columns>
+      </TableView>
+
+      <!-- Sun Devil Header -->
+      <Label alignment="CENTER" layoutX="57.0" layoutY="4.0" prefHeight="35.0" prefWidth="128.0" text="SUN DEVIL" textAlignment="CENTER" textFill="#7d2521">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Book Exchange Header -->
+      <Label layoutX="59.0" layoutY="33.0" text="BOOK EXCHANGE" textFill="#7d2521">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+
+      <!-- Logo Image -->
+      <ImageView fitHeight="43.0" fitWidth="40.0" layoutX="9.0" layoutY="7.0">
+         <image>
+            <Image url="@../../Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
