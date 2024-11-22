@@ -35,7 +35,7 @@
          </padding>
          <children>
             <!-- Dashboard Navigation Label -->
-            <Label fx:id="dashboardLabel" alignment="CENTER" prefHeight="17.0" prefWidth="202.0" text="DASHBOARD" onMouseClicked="#handleNavigation" styleClass="inactive-label">
+            <Label fx:id="dashboardLabel" alignment="CENTER" prefHeight="17.0" prefWidth="202.0" text="DASHBOARD">
                <VBox.margin>
                   <Insets top="60.0" />
                </VBox.margin>
@@ -55,7 +55,7 @@
             </Label>
 
             <!-- Monitor Transactions Navigation Label -->
-            <Label fx:id="monitorTransactionsLabel" prefHeight="17.0" prefWidth="221.0" text="Monitor Transactions" onMouseClicked="#handleNavigation" styleClass="active-label">
+            <Label fx:id="monitorTransactionsLabel" prefHeight="17.0" prefWidth="221.0" text="Monitor Transactions">
                <font>
                   <Font size="15.0" />
                </font>
@@ -99,8 +99,8 @@
       <!-- Logout Footer Bar -->
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cccccc" height="60.0" layoutY="615.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
 
-      <!-- Logout Label -->
-      <Label layoutX="61.0" layoutY="630.0" text="LOGOUT" textFill="#656565">
+      <!-- Logout Navigation Label -->
+      <Label fx:id="logoutLabel" layoutX="61.0" layoutY="630.0" text="LOGOUT" onMouseClicked="#handleNavigation" styleClass="inactive-label">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>

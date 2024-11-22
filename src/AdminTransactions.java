@@ -24,11 +24,12 @@ import java.sql.Statement;
 public class AdminTransactions {
 
     // Define FXML Labels For Navigation
-    @FXML private Label dashboardLabel;
+	@FXML private Label dashboardLabel;
     @FXML private Label monitorTransactionsLabel;
     @FXML private Label buyingSalesRecordLabel;
     @FXML private Label manageUserAccountsLabel;
     @FXML private Label systemConfigLabel;
+    @FXML private Label logoutLabel;
 
     // Define FXML TableView And TableColumn Elements
     @FXML private TableView<Transaction> transactionTable;
@@ -148,11 +149,10 @@ public class AdminTransactions {
             String fxmlFile = "";
 
             // Determine Target FXML File Based On Source Label
-            if (event.getSource() == dashboardLabel) fxmlFile = "AdminDash.fxml";
-            else if (event.getSource() == monitorTransactionsLabel) fxmlFile = "AdminTransactions.fxml";
-            else if (event.getSource() == buyingSalesRecordLabel) fxmlFile = "AdminDash.fxml";
+            if (event.getSource() == buyingSalesRecordLabel) fxmlFile = "AdminDash.fxml";
             else if (event.getSource() == manageUserAccountsLabel) fxmlFile = "AdminAccts.fxml";
             else if (event.getSource() == systemConfigLabel) fxmlFile = "AdminConfig.fxml";
+            else if (event.getSource() == logoutLabel) fxmlFile = "Login.fxml";
 
             if (!fxmlFile.isEmpty()) {
                 // Load And Display Target FXML Scene
