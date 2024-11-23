@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminTransactions">
+  <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0000213623047" minWidth="10.0" prefWidth="144.0000213623047" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.93" minWidth="0.0" prefWidth="57.07" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.73" minWidth="10.0" prefWidth="175.47" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.40" minWidth="0.0" prefWidth="54.13" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="433.33" minWidth="10.0" prefWidth="188.40" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="402.93" minWidth="1.87" prefWidth="73.60" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="569.33" minWidth="10.0" prefWidth="193.40" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="509.60" minWidth="0.0" prefWidth="60.53" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="683.80" minWidth="10.0" prefWidth="181.60" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="586.93" minWidth="5.80" prefWidth="14.40" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints />
+      <RowConstraints maxHeight="280.5333312988281" minHeight="10.0" prefHeight="48.0000175476074" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="289.60" minHeight="10.0" prefHeight="32.53" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="312.53" minHeight="10.0" prefHeight="62.13" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="282.13" minHeight="10.0" prefHeight="57.93" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="249.87" minHeight="1.40" prefHeight="33.80" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.20" minHeight="10.0" prefHeight="70.07" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="274.13" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="324.0" minHeight="10.0" prefHeight="25.80" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="268.27" minHeight="10.0" prefHeight="64.47" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="262.93" minHeight="10.0" prefHeight="44.73" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="262.93" minHeight="10.0" prefHeight="59.53" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.13" minHeight="10.0" prefHeight="81.20" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.13" minHeight="10.0" prefHeight="40.60" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.13" minHeight="10.0" prefHeight="40.60" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Text fill="#561010" strokeType="OUTSIDE" strokeWidth="0.0" text="MONITOR TRANSACTIONS" wrappingWidth="450.0" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+
+      <!-- Navigation Buttons -->
+      <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#LogoutButtonClick" prefHeight="68.0" prefWidth="145.0" style="-fx-background-color: #D3D3D3; -fx-background-radius: 0;" text="LOGOUT" textFill="#595959" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="13" GridPane.rowSpan="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+
+      <!-- Navigation Regions -->
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="11" GridPane.rowSpan="2" />
+
+      <Button fx:id="DashButton" mnemonicParsing="false" prefHeight="33.0" prefWidth="149.0" style="-fx-background-color: white;" text="DASHBOARD" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="QUICK NAVIGATION" wrappingWidth="109.60" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.rowSpan="2">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+         </GridPane.margin>
+      </Text>
+
+      <!-- Navigation Buttons VBox -->
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.rowSpan="4" GridPane.valignment="CENTER">
+         <children>
+            <Button fx:id="MonitorTransactionsButton" mnemonicParsing="false" prefHeight="59.0" prefWidth="178.0" style="-fx-background-color: white;" text="Monitor Transactions" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="BuyingSalesRecordButton" mnemonicParsing="false" onAction="#BuyingSalesRecordButtonClick" prefHeight="57.0" prefWidth="150.0" style="-fx-background-color: white;" text="Buying &amp; Sales Record">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ManageUserAccountButton" mnemonicParsing="false" onAction="#ManageUserAccountButtonClick" prefHeight="58.0" prefWidth="133.0" style="-fx-background-color: white;" text="Manage User Account">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="SystemConfigurationButton" mnemonicParsing="false" onAction="#SystemConfigurationButtonClick" prefHeight="46.0" prefWidth="143.0" style="-fx-background-color: white;" text="System Configuration">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+
+      <!-- Header Elements -->
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gold;" GridPane.columnIndex="1" GridPane.columnSpan="10" GridPane.rowIndex="1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0b326" height="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="146.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+      <!-- Logo and Labels -->
+      <ImageView fitHeight="43.0" fitWidth="40.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <image>
+            <Image url="@../../Logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_RIGHT" prefHeight="35.0" prefWidth="128.0" text="SUN DEVIL" textAlignment="CENTER" textFill="#7d2521" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_RIGHT" prefHeight="35.0" prefWidth="128.0" text="BOOK EXCHANGE" textAlignment="CENTER" textFill="#7d2521" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+
+      <!-- Transaction Table -->
+      <TableView fx:id="transactionTable" GridPane.columnIndex="3" GridPane.columnSpan="7" GridPane.rowIndex="5" GridPane.rowSpan="8">
+        <columns>
+          <TableColumn fx:id="indexColumn" prefWidth="30.0" text="#" />
+          <TableColumn fx:id="typeColumn" prefWidth="90.0" text="TYPE" />
+          <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="dateColumn" prefWidth="95.0" text="DATE" />
+          <TableColumn fx:id="titleColumn" prefWidth="204.0" text="TITLE" />
+          <TableColumn fx:id="categoryColumn" prefWidth="122.0" text="CATEGORY" />
+          <TableColumn fx:id="conditionColumn" prefWidth="120.0" text="CONDITION" />
+          <TableColumn fx:id="unitPriceColumn" prefWidth="95.0" text="UNIT PRICE" />
+          <TableColumn fx:id="userColumn" prefWidth="85.0" text="USER" />
+        </columns>
+      </TableView>
+   </children>
+</GridPane>
