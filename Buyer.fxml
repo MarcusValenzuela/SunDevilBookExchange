@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Buyer">
+  <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0000213623047" minWidth="10.0" prefWidth="144.0000213623047" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.93331146240234" minWidth="0.0" prefWidth="27.733367919921875" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="331.73330383300777" minWidth="10.0" prefWidth="157.8666320800781" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.40003967285156" minWidth="0.0" prefWidth="45.60000000000002" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="433.33334960937503" minWidth="10.0" prefWidth="149.60002441406243" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="402.93330688476556" minWidth="1.8666564941405568" prefWidth="314.39997558593745" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="569.3333068847655" minWidth="10.0" prefWidth="89.33339843750002" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="509.5999938964843" minWidth="0.0" prefWidth="30.133410644531295" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="683.7999877929688" minWidth="10.0" prefWidth="133.06658935546886" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="586.9332763671875" minWidth="5.800024414062477" prefWidth="111.13334960937505" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="280.5333312988281" minHeight="10.0" prefHeight="48.0000175476074" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="289.5999931335449" minHeight="10.0" prefHeight="56.3333251953125" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="312.5333419799805" minHeight="10.0" prefHeight="36.866674804687506" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="282.13336791992185" minHeight="10.0" prefHeight="48.933325195312506" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="249.8666534423828" minHeight="1.4000000000000057" prefHeight="58.26667480468748" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="279.2000030517578" minHeight="10.0" prefHeight="48.13332214355472" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="274.1333251953125" minHeight="10.0" prefHeight="44.99996337890627" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="324.0000061035156" minHeight="10.0" prefHeight="45.73334350585935" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="268.26666870117185" minHeight="10.0" prefHeight="41.466656494140636" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="262.93329467773435" minHeight="10.0" prefHeight="44.733258056640636" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="262.93329467773435" minHeight="10.0" prefHeight="98.4666748046875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.13339843749998" minHeight="10.0" prefHeight="24.333325195312455" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.13339843749998" minHeight="10.0" prefHeight="38.4666748046875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="250.13339843749998" minHeight="10.0" prefHeight="51.26668701171877" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button fx:id="LogoutButton" mnemonicParsing="false" onAction="#LogoutButtonClick" prefHeight="112.0" prefWidth="145.0" style="-fx-background-color: #D3D3D3; -fx-background-radius: 0;" text="LOGOUT" textFill="#595959" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="12" GridPane.rowSpan="2" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Button fx:id="BrowseAllButton" mnemonicParsing="false" onAction="#BrowseAllButtonClick" prefHeight="33.0" prefWidth="149.0" style="-fx-background-color: white;" text="BROWSE ALL" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BROWSE BY CATEGORY" textAlignment="CENTER" wrappingWidth="126.40334057807922" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="11.0" left="11.0" right="11.0" top="11.0" />
+         </GridPane.margin>
+      </Text>
+      <VBox fx:id="CategoryBanner" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.rowSpan="8" GridPane.valignment="TOP">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+         </GridPane.margin></VBox>
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="10" GridPane.rowSpan="2" />
+      <Line endX="100.0" startX="-100.0" strokeType="INSIDE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Region prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: gold;" GridPane.columnIndex="1" GridPane.columnSpan="10" />
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+      <Label fx:id="CategoryTitleLabel" prefHeight="34.0" prefWidth="388.0" text="BOOKS FOR SALE" textFill="#561010" GridPane.columnIndex="3" GridPane.columnSpan="4" GridPane.rowIndex="2">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Region prefHeight="620.0" prefWidth="347.0" style="-fx-background-color: white;" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="13" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="140.0" prefWidth="357.0" text="YOUR CART" textFill="#561010" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="CheckOutButton" alignment="CENTER" mnemonicParsing="false" onAction="#CheckOutButtonClick" prefHeight="37.0" prefWidth="110.0" style="-fx-background-color: #561010;" text="CHECK OUT" textFill="WHITE" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="13" GridPane.valignment="TOP">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="totalLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="350.0" text="TOTAL: " textAlignment="CENTER" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" GridPane.valignment="CENTER" />
+      <TableView fx:id="BooksTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="5" GridPane.rowIndex="3" GridPane.rowSpan="8">
+        <columns>
+          <TableColumn fx:id="IDCol" prefWidth="47.733306884765625" text="ID" />
+          <TableColumn fx:id="TitleCol" prefWidth="121.33329772949219" text="TITLE" />
+            <TableColumn fx:id="AuthorCol" prefWidth="103.20001220703125" text="AUTHOR" />
+            <TableColumn fx:id="YearCol" prefWidth="77.06674194335938" text="YEAR" />
+            <TableColumn fx:id="CategoryCol" prefWidth="129.8665771484375" text="CATEGORY" />
+            <TableColumn fx:id="ConditionCol" prefWidth="107.7333984375" text="CONDITION" />
+            <TableColumn fx:id="PriceCol" prefWidth="76.26666259765625" text="PRICE ($)" />
+            <TableColumn fx:id="CartCol" prefWidth="82.13330078125" text="CART" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="AddToCartButton" mnemonicParsing="false" onAction="#AddToCartButtonClick" prefHeight="60.0" prefWidth="210.0" style="-fx-background-color: #561010;" text="ADD TO CART" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="12">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ScrollPane fx:id="CartScrollPane" pannable="true" prefHeight="642.0" prefWidth="245.0" style="-fx-background-color: white; -fx-border-color: white;" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.rowSpan="8" GridPane.vgrow="ALWAYS">
+        <content>
+          <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="706.0" prefWidth="372.0" style="-fx-background-color: white; -fx-border-color: white;">
+               <children>
+                  <VBox fx:id="cartVBox" layoutX="11.200000000000001" layoutY="1.6" prefHeight="705.0" prefWidth="361.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button fx:id="RemoveFromCartButon" mnemonicParsing="false" onAction="#RemoveFromCartButonClick" prefHeight="70.0" prefWidth="185.0" style="-fx-background-color: #561010;" text="REMOVE FROM CART" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="12">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="ConfirmCheckoutLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="207.0" textAlignment="CENTER" textFill="#00a635" wrapText="true" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e0b326" height="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="146.0" GridPane.columnIndex="1" />
+      <ImageView fitHeight="43.0" fitWidth="40.0" GridPane.columnIndex="1">
+         <image>
+            <Image url="@../../Logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_RIGHT" prefHeight="35.0" prefWidth="128.0" text="SUN DEVIL" textAlignment="CENTER" textFill="#7d2521" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="BOTTOM_RIGHT" prefHeight="35.0" prefWidth="128.0" text="BOOK EXCHANGE" textAlignment="CENTER" textFill="#7d2521" GridPane.columnIndex="1">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

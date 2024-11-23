@@ -1,0 +1,17 @@
+/* JavaFX CSS - Leave thi/* Style For The Active/Current View Label */
+.active-label {
+    -fx-text-fill: #4A4A4A; /* Dark Gray Color For Active View */
+    -fx-cursor: hand; /* Changes Cursor To Pointer */
+}
+
+/* Style For The Inactive Labels */
+.inactive-label {
+    -fx-text-fill: #808080; /* Light Gray Color For Inactive Labels */
+    -fx-cursor: hand; /* Changes Cursor To Pointer */
+}
+
+/* Style For The Quick Navigation Header */
+.navigation-header {
+    -fx-text-fill: #000000; /* Black Color For Quick Navigation Text */
+    -fx-font-weight: bold; /* Bold Font Style */
+} /*comment until you have at least create one rule which uses -fx-Property */
